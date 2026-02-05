@@ -11,4 +11,5 @@ jobs:
       - name: Echo message
         env:
           MESSAGE: ${{ github.event.client_payload.message }}
-        run: echo "$MESSAGE"
+          COMMENT: ${{ github.event.client_payload.comment }}
+        run: echo "$MESSAGE$COMMENT"
