@@ -2,7 +2,7 @@ name: Repository Dispatch Workflow
 
 on:
   repository_dispatch:
-    types: [echo_message]
+    types: [echo_message_yoshi]
 
 jobs:
   echo_job:
